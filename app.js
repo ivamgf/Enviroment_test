@@ -20,6 +20,26 @@ function modal() {
       <!-- Modal content-->
     </div>
   </div>`;
-//Modal
+
 document.getElementById("buttonAlert").innerHTML = div_01;
 }
+//Modal
+
+//Alert
+function notices() {              
+
+  var render = `<div class="alert alert-success alert-dismissible" id="myAlert">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Teste</div>`;
+
+  $(document).ready(function(){    
+      $("#myAlert").animate({bottom: '10px'});
+  });
+  
+  $(document).ready(function(){
+      $("#myAlert").fadeOut(10000);
+  });
+
+  document.getElementById("alerts").innerHTML = render;
+            
+}
+//Alert

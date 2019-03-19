@@ -11,11 +11,19 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container">  
+
   <h1>Enviroment Tests</h1>
   <div id="buttonAlert"></div> 
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="modal()">Open Modal</button>
+
+  <button type="button" class="btn btn-info btn-lg" onclick="notices()">Alerta</button>
+  <div id="alerts"></div>
 </div>
 
+<script>
+  notices();
+</script>
 </body>
 </html>
+
